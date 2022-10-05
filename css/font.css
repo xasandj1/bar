@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'Lumberjack';
+    src: url('../fonts/Lumberjack.ttf');
+    font-weight: 400;
+}
+@font-face {
+    font-family: 'Roboto';
+    src: url('../fonts/RobotoCondensed-Regular.ttf');
+    font-weight: 400;
+}
