@@ -354,17 +354,10 @@ li {
 }
 
 .gallery-content_photos {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 4fr);
   margin-top: 70px;
-}
-
-.gallery-content_photos1 {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 40px;
+  gap: 30px;
 }
 
 .footer-content {
@@ -402,42 +395,249 @@ li {
   .paryt-content_right {
     display: none;
   }
-  .paryt-content_up{
+
+  .paryt-content_up {
     display: flex;
     position: absolute;
     top: -5%;
     left: 2%;
   }
-  .california_content{
+
+  .california_content {
     max-width: 720px;
     width: 100%;
   }
-  .california{
+
+  .california {
     min-height: 750px;
   }
 }
+
 @media (max-width: 1024px) {
-  .california{
+  .california {
     min-height: 550px;
   }
-  .part-content_cards-card_imgs{
+
+  .part-content_cards-card_imgs {
     max-width: 315px;
     width: 100%;
   }
-  .part-content_cards-card_imgs-img{
+
+  .part-content_cards-card_imgs-img {
     max-width: 315px;
     width: 100%;
   }
-  .gallery-content_photos{
+
+  .gallery-content_photos {
     flex-wrap: wrap;
   }
-  .gallery-content_photos1{
+
+  .gallery-content_photos1 {
     flex-wrap: wrap;
   }
-  .part-content_cards-card_titles-txt{
+
+  .part-content_cards-card_titles-txt {
     margin-top: 20px;
   }
-  .paryt-content_img{
+
+  .paryt-content_img {
     display: none;
   }
+
+  .gallery-content_photos-home {
+    max-width: 315px;
+    width: 100%;
+    margin: 10px 0;
+  }
 }
+
+@media (max-width: 768px) {
+  .part-content_cards-card:nth-child(3) {
+    display: none;
+  }
+
+  .news-content_all {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 100px;
+    flex-direction: column-reverse;
+  }
+
+  .news-content_star {
+    position: absolute;
+    top: 5%;
+    right: 0;
+  }
+
+  .gallery-content_photos {
+    display: grid;
+    grid-template-columns: repeat(2, 4fr);
+  }
+
+  .gallery {
+    padding: 100px 0;
+    background: url(../img/gallery.svg)no-repeat center / cover;
+    min-height: 1169px;
+  }
+
+  .california_content {
+    max-width: 450px;
+    width: 100%;
+  }
+
+  .california_content-top_title {
+    font-size: 70px;
+    margin-left: 20px;
+  }
+
+  .california_content-bottom_txt {
+    font-size: 36px;
+    line-height: 42px;
+    margin-left: 20px;
+  }
+
+  .california {
+    min-height: 450px;
+  }
+
+  .california_content {
+    min-height: 450px;
+  }
+
+  .party-content_title {
+    font-size: 36px;
+  }
+
+  .part-content_cards-card_imgs {
+    max-width: 354px;
+    width: 100%;
+  }
+
+  .news-content_title {
+    font-size: 36px;
+  }
+
+  .news-content_all-left_img {
+    height: 350px;
+    max-width: 500px;
+    width: 100%;
+  }
+
+  .news-content_star {
+    position: absolute;
+    top: 5%;
+    right: 10%;
+  }
+
+  .news-content_all-rights {
+    margin-top: 50px;
+  }
+
+  .news-content_button {
+    margin-top: 40px;
+  }
+
+  .everyday {
+    min-height: 400px;
+  }
+
+  .gallery {
+    padding: 60px 0;
+  }
+
+  .gallery-content_photos {
+    margin-top: 30px;
+    gap: 10px;
+  }
+ 
+}
+@media (max-width: 768px) {
+  .news-content_all-right_span {
+    color: white;
+    margin: 0 25px;
+    overflow: hidden;
+    display: none;
+}
+.news-content_all-rights_right-top{
+  justify-content: space-between;
+}
+.news-content_all-right_title1{
+  max-width: 130px;
+  width: 100%;
+}
+.news-content_button-btn {
+  font-size: 18px;
+}
+.part-content_cards {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.california_content-top_title {
+font-size: 36px;
+  width: unset;
+}
+.california_content {
+  background: linear-gradient(141.38deg, rgba(0, 0, 0, 0.37) 0.62%, rgba(41, 38, 41, 0.01) 100%);
+   backdrop-filter: unset;
+}
+.california_content-bottom_txt {
+  font-size: 24px;
+   margin-left: unset; 
+}
+.header_nav-content_list {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.header_nav-content_list-link {
+  font-size: 16px;
+}
+.part-content_cards-card_imgs-img {
+  max-width: 355px;
+  width: 100%;
+}
+.part-content_cards-card {
+  max-width: 354px;
+  width: 100%;
+  margin: 10px 0;
+}
+.party {
+  margin: 10px 0;
+  position: relative;
+}
+.gallery {
+  padding: 100px 0;
+  background: url(../img/gallery.svg)no-repeat center / cover;
+  min-height: 899px;
+}
+}
+@media (max-width: 320px) {
+  .footer-content_title {
+    font-weight: 400;
+    font-size: 36px;
+    color: var(--pink);
+}
+.footer-content_txt {
+  font-size: 16px;
+}
+.california_content-bottom_txt {
+  font-size: 24px;
+  margin-left: unset;
+  text-align: center;
+}
+.header_nav-content_list-link {
+  font-size: 11px;
+}
+.news-content_star {
+  position: absolute;
+  top: 7%;
+  right: -16%;
+}
+.overflow{
+  overflow: hidden;
+}
+}
+
